@@ -7,7 +7,7 @@ from werkzeug.utils import secure_filename
 # Import utilities
 from utils.data_processing import clean_data, encode_categorical
 from utils.visualization import plot_bar_chart
-#from models.predictor import train_model
+from models.predictor import train_model
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = "uploads"
@@ -67,7 +67,7 @@ def train():
 
     if request.method == 'POST':  # Train model when form is submitted
         try:
-            #model = train_model(df)
+            model = train_model(df)
             return render_template('train.html', success=True)
         except Exception as e:
             return render_template('train.html', error=str(e))
