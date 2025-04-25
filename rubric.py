@@ -42,9 +42,9 @@ if (input(f'>>> `{name}` okay?  ') != 'y'):
 #]
 
 #for item in checks:
-    deduct(exists(item), 2, f'<{item}> does not exist.')
-    if not exists(item):
-        print(f'<{item}> does not exist.')
+ #   deduct(exists(item), 2, f'<{item}> does not exist.')
+  #  if not exists(item):
+   #     print(f'<{item}> does not exist.')
 
 print('\n *** Presentation ***\n')
 deduct(
@@ -58,14 +58,14 @@ deduct(
     'Presentation does not meet requirments.'
 )
 
-if (not exists(checks[0])):
-    temp = input('>>> Data dir name?  ')
-    checks[0] = temp if temp == '?' else LOCAL + name + temp
+#if (not exists(checks[0])):
+ #   temp = input('>>> Data dir name?  ')
+  #  checks[0] = temp if temp == '?' else LOCAL + name + temp
 
 #print('\n *** Data Directory ***\n')
-if checks[0] != '?':
-    DFS(checks[0])
-print('\n')
+#if checks[0] != '?':
+ #   DFS(checks[0])
+#print('\n')
 
 deduct(
     input('>>> Can they find the file?  ') == 'y',
