@@ -31,15 +31,15 @@ if (input(f'>>> `{name}` okay?  ') != 'y'):
     name = input('>>> Name?  ')
 
 #checks = [
-    LOCAL + name + '/data',
-    LOCAL + name + '/src',
-    LOCAL + name + '/README.md',
-    LOCAL + name + '/deliverables',
-    LOCAL + name + '/deliverables/presentation/final.pdf',
-    LOCAL + name + '/deliverables/presentation/midterm.pdf',
-    LOCAL + name + '/deliverables/final_idea.pdf',
-    LOCAL + name + '/deliverables/three_ideas.pdf'
-]
+#    LOCAL + name + '/data',
+#   LOCAL + name + '/src',
+#    LOCAL + name + '/README.md',
+#   LOCAL + name + '/deliverables',
+#   LOCAL + name + '/deliverables/presentation/final.pdf',
+#   LOCAL + name + '/deliverables/presentation/midterm.pdf',
+ #   LOCAL + name + '/deliverables/final_idea.pdf',
+  #  LOCAL + name + '/deliverables/three_ideas.pdf'
+#]
 
 for item in checks:
     deduct(exists(item), 2, f'<{item}> does not exist.')
