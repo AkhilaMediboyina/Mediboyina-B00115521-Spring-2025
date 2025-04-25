@@ -30,7 +30,7 @@ if (input(f'>>> `{name}` okay?  ') != 'y'):
     deduct(None, 2, f'Repo. name <{name}> not standard.')
     name = input('>>> Name?  ')
 
-checks = [
+#checks = [
     LOCAL + name + '/data',
     LOCAL + name + '/src',
     LOCAL + name + '/README.md',
@@ -62,7 +62,7 @@ if (not exists(checks[0])):
     temp = input('>>> Data dir name?  ')
     checks[0] = temp if temp == '?' else LOCAL + name + temp
 
-print('\n *** Data Directory ***\n')
+#print('\n *** Data Directory ***\n')
 if checks[0] != '?':
     DFS(checks[0])
 print('\n')
