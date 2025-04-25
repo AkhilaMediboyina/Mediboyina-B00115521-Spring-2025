@@ -81,10 +81,10 @@ deduct(
 
 
 print('\n *** Source Directory ***\n')
-if (not exists(checks[1])):
-    checks[1] = LOCAL + name + input('>>> Source dir name?  ')
-DFS(checks[1])
-print('\n')
+#if (not exists(checks[1])):
+ #   checks[1] = LOCAL + name + input('>>> Source dir name?  ')
+#DFS(checks[1])
+#print('\n')
 
 deduct(
     input('>>> Does not have extra files?  ') == 'y',
