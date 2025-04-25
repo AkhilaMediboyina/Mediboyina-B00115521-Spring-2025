@@ -41,7 +41,7 @@ if (input(f'>>> `{name}` okay?  ') != 'y'):
   #  LOCAL + name + '/deliverables/three_ideas.pdf'
 #]
 
-for item in checks:
+#for item in checks:
     deduct(exists(item), 2, f'<{item}> does not exist.')
     if not exists(item):
         print(f'<{item}> does not exist.')
